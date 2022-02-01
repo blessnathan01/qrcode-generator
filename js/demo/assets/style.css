@@ -51,7 +51,8 @@ nav {
 
 .brand {
     font-weight: bold;
-    
+    margin-right: 8%;
+    text-transform: uppercase;
 }
 
 #active {
