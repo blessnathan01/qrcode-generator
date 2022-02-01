@@ -51,7 +51,7 @@ nav {
 
 .brand {
     font-weight: bold;
-    margin-right: 8%;
+    padding-right: 8%;
     text-transform: uppercase;
 }
 
@@ -79,7 +79,7 @@ a {
 
 header {
     background-color: lightgreen;
-    padding: 12.5%;
+    padding: 10% 0%;
     text-align: center;
     font-size: 48px;
 }
