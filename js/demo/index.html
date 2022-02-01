@@ -14,7 +14,7 @@
 
   <nav>
      <ul class="links">
-         <li class="brand">Afrikagera</li>
+         <li class="brand">qrkodi</li>
          <li class="menu-item"><a href="index.html" id="active">Home</a></li>
          <li class="menu-item"><a href="about-us.html" id="link">About us</a></li>
          <li class="menu-item"><a href="contact-us.html" id="link">Contact us</a></li>
@@ -48,17 +48,15 @@
       <option value="UTF-8" selected>UTF-8</option>
     </select>
     <br/>
-    <textarea name="msg" rows="10" cols="40">here comes qr!</textarea>
+    <textarea name="msg" rows="10" cols="40" placeholder="Enter your url or text"></textarea>
     <br/>
-    <input type="button" value="update" onclick="update_qrcode()"/>
+    <input type="button" value="Generate QR code" onclick="update_qrcode()"/>
     <div id="qr"></div>
   </form>
 
 <hr/>
 
-<footer>
-&copy; QRKODI <script type="text/javascript">document.write(new Date().getFullYear()); </script>, ‘QR Code’ is a registered trademark of DENSO WAVE INCORPORATED
-</footer>
+<footer>&copy; QRKODI <script type="text/javascript">document.write(new Date().getFullYear()); </script>, ‘QR Code’ is a registered trademark of DENSO WAVE INCORPORATED</footer>
 
 </body>
 
