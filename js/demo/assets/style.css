@@ -1,7 +1,10 @@
 /* Author: Blessing Rweikiza */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 17.7px;
     margin: 0 0;
 }
@@ -10,17 +13,17 @@ nav {
     /* height: 50px; */
     padding: 1%;
     font-size: larger;
-    font-weight: 500;
 }
 
 .brand {
     font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-right: 8%;
     text-transform: uppercase;
 }
 
 #active {
-    color: firebrick;
+    color: #4CAF50;
 }
 
 .links li {
@@ -41,8 +44,26 @@ a {
     color: black;
 }
 
-header {
-    background-color: lightgreen;
+#link:hover {
+    color: #4CAF50;
+}
+
+.header1 {
+    /* background-color: lightgreen; */
+    padding: 0 6%;
+    text-align: center;
+    /* font-size: 21px; */
+}
+
+.header1-tag {
+    font-size: 18px;
+    color: #575757;
+    margin-bottom: 5%;
+}
+
+.header2 {
+    background-color: #4CAF50;
+    color: #fff;
     padding: 12.5%;
     text-align: center;
 }
@@ -54,13 +75,53 @@ article {
 }
 
 .ads {
-    background-color: lightcyan;
+    background-color: #4CAF50;
     padding: 6.5% 12.5%;
     text-align: center;
 }
 
 footer {
-    background-color: lightgreen;
+    background-color: #4CAF50;
     padding: 1.5%;
     text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#qr {
+    margin-top: 2%;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+input[type=text]:hover {
+    border-color: #45a049;
+}
+
+input[type=button] {
+    width: 15%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+  
+input[type=button]:hover {
+    background-color: #45a049;
 }
