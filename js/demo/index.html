@@ -14,49 +14,49 @@
 
   <nav>
      <ul class="links">
-         <li class="brand">qrkodi</li>
-         <li class="menu-item"><a href="index.html" id="active">Home</a></li>
+         <li class="brand"><a href="index.html" id="link" style="color: #4CAF50;">qrkodi</a></li>
+         <!-- <li class="menu-item"><a href="index.html" id="active">Home</a></li>
          <li class="menu-item"><a href="about-us.html" id="link">About us</a></li>
-         <li class="menu-item"><a href="contact-us.html" id="link">Contact us</a></li>
+         <li class="menu-item"><a href="contact-us.html" id="link">Contact us</a></li> -->
      </ul>
   </nav>
   
-  <header>Generate your own QR codes</header>
-
-<div class="section">
+  <header class="header1">
+  <h1>Create your own QR codes and improve your sharing scheme.</h1>
+  <p class="header1-tag">Easily create, share and let people scan your QR codes.</p>
   <form name="qrForm">
-    <span>TypeNumber:</span>
-    <select name="t"></select>
-    <span>ErrorCorrectionLevel:</span>
-    <select name="e">
+    <span hidden>TypeNumber:</span>
+    <select name="t" hidden></select>
+    <span hidden>ErrorCorrectionLevel:</span>
+    <select name="e" hidden>
       <option value="L">L(7%)</option>
       <option value="M" selected="selected">M(15%)</option>
       <option value="Q">Q(25%)</option>
       <option value="H">H(30%)</option>
     </select>
-    <span>Mode:</span>
-    <select name="m">
+    <span hidden>Mode:</span>
+    <select name="m" hidden>
       <option value="Numeric">Numeric</option>
       <option value="Alphanumeric">Alphanumeric</option>
       <option value="Byte" selected>Byte</option>
       <option value="Kanji">Kanji</option>
     </select>
-    <span>Multibyte:</span>
-    <select name="mb">
+    <span hidden>Multibyte:</span>
+    <select name="mb" hidden>
       <option value="default">None</option>
       <option value="SJIS">SJIS</option>
       <option value="UTF-8" selected>UTF-8</option>
     </select>
-    <br/>
-    <textarea name="msg" rows="10" cols="40" placeholder="Enter your url or text"></textarea>
-    <br/>
-    <input type="button" value="Generate QR code" onclick="update_qrcode()"/>
+    <!-- <br/> -->
+    <input type="text" name="msg" placeholder="Enter your url or text"></input>
+    <input type="button" value="Create QR code" onclick="update_qrcode()"/>
     <div id="qr"></div>
   </form>
+  </header>
 
-<hr/>
+<!-- <hr/> -->
 
-<footer>&copy; QRKODI <script type="text/javascript">document.write(new Date().getFullYear()); </script>, ‘QR Code’ is a registered trademark of DENSO WAVE INCORPORATED</footer>
+<footer style="font-size: 15px; background-color: #fff;">&copy; QRKODI <script type="text/javascript">document.write(new Date().getFullYear()); </script>, ‘QR Code’ is a registered trademark of DENSO WAVE INCORPORATED</footer>
 
 </body>
 
